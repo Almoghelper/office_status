@@ -1,0 +1,56 @@
+*{box-sizing:border-box;font-family:system-ui,"Noto Sans Hebrew",Arial,sans-serif;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;background:#0e1118;color:#e8eaf0}
+.app{display:flex;min-height:100vh;min-height:100dvh}
+.main{flex:1;min-width:0;padding:max(14px,env(safe-area-inset-top)) 12px 28px;max-width:720px;margin:0 auto}
+h1{font-size:21px;font-weight:500;margin:0}
+.top{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.pill{display:flex;align-items:center;gap:6px;font-size:12px;background:#171c27;border:.5px solid #232a38;border-radius:999px;padding:5px 10px;color:#b9c2d4;white-space:nowrap}
+.dot{width:8px;height:8px;border-radius:50%;background:#888;flex:none}
+.card{background:#171c27;border:.5px solid #232a38;border-radius:16px;padding:12px;margin-top:12px}
+.lbl{font-size:12px;color:#7d879b;margin:0 0 10px;display:flex;justify-content:space-between;align-items:center}
+.small{font-size:13px;color:#b9c2d4;white-space:nowrap}
+.hint{font-size:11px;color:#5f6980;margin:8px 0 0}
+.lk{font-size:12px;color:#7aa7ff;cursor:pointer}
+.hide{display:none!important}
+.prev{display:flex;flex-direction:column;align-items:center;gap:10px}
+.pvs{width:100%}
+#cv{width:100%;aspect-ratio:4/1;image-rendering:pixelated;border:.5px solid #333;border-radius:8px;background:#000;display:block}
+#cv2{width:150px;height:150px;border-radius:12px;display:block}
+.cap{font-size:11px;color:#7d879b;text-align:center;margin-top:5px}
+#msg{text-align:center;font-size:13px;min-height:18px;color:#8e98ad;margin-top:6px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.sb{position:relative;border:0;border-radius:14px;height:64px;font-size:17px;font-weight:500;cursor:pointer;padding:0 6px;font-family:inherit}
+.sb:active{transform:scale(.97)}
+.sb.sel{box-shadow:0 0 0 2px #0e1118,0 0 0 4px #6aa3ff}
+.sb.add{background:none;border:1px dashed #3a4457;color:#7d879b;font-size:14px;font-weight:400}
+.x{display:none;position:absolute;top:-7px;left:-7px;width:22px;height:22px;border-radius:50%;background:#c62828;color:#fff;font-size:13px;line-height:22px;text-align:center}
+.edit .x{display:block}
+input[type=text],input[type=password],input[type=number]{width:100%;background:#1d2330;border:.5px solid #2b3446;border-radius:12px;color:#e8eaf0;height:42px;padding:0 12px;font-size:15px}
+input[type=range]{width:100%}
+.clr{width:44px;height:42px;border:0;background:none;padding:0;flex:none}
+.row{display:flex;gap:8px;margin-top:8px;align-items:center}
+.btn{background:#4c8dff;color:#fff;border:0;border-radius:12px;padding:0 18px;height:42px;font-size:15px;cursor:pointer;font-family:inherit;white-space:nowrap}
+.btn2{flex:1;background:#1d2330;color:#e8eaf0;border:.5px solid #2b3446;border-radius:10px;height:38px;font-size:13px;cursor:pointer;font-family:inherit}
+.sv{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px}
+.chk{display:flex;align-items:center;gap:6px;font-size:13px;color:#b9c2d4}
+.seg{display:flex;border:.5px solid #2b3446;border-radius:10px;overflow:hidden;flex:1}
+.seg button{flex:1;height:38px;border:0;background:#1d2330;color:#b9c2d4;font-size:13px;cursor:pointer;font-family:inherit}
+.seg button.a{background:#4c8dff;color:#fff}
+/* side bar */
+.rail{background:#131720;border-left:.5px solid #232a38;width:68px;flex:none;display:flex;flex-direction:column;padding:max(10px,env(safe-area-inset-top)) 0 10px;gap:2px;transition:width .2s;overflow:hidden;position:sticky;top:0;height:100vh;height:100dvh}
+.rail.open{width:224px}
+.ri{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:58px;padding:6px 4px;color:#7d879b;font-size:11px;cursor:pointer;background:none;border:0;width:100%;font-family:inherit;line-height:1.2;white-space:nowrap}
+.ri i{font-size:22px}
+.ri.on{color:#6aa3ff}
+.ri.on i{background:#1b2a47;border-radius:12px;padding:5px 12px;width:22px;box-sizing:content-box}
+.ri .st2{display:none;font-size:10px;color:#5f6980}
+.rail.open .ri{flex-direction:row;justify-content:flex-start;gap:12px;padding:6px 16px;min-height:48px;font-size:14px}
+.rail.open .ri.on i{background:none;padding:0}
+.rail.open .ri .st2{display:inline;margin-right:auto}
+.ri.last{margin-top:auto}
+.ri.xtra{display:none;text-decoration:none}
+.rail.open .ri.xtra{display:flex}
+.bl{display:none;padding:2px 16px 10px}
+.rail.open .bl{display:block}
+.info{display:none;padding:8px 16px;font-size:12px;color:#7d879b;line-height:1.9;white-space:nowrap}
+.rail.open .info{display:block}
