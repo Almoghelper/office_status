@@ -76,4 +76,15 @@
 </div>
 <script src="mqtt.min.js"></script>
 <script src="app.js"></script>
+<script>
+window.addEventListener('load', function () {
+  var miss = [];
+  if (typeof mqtt === 'undefined') miss.push('mqtt.min.js');
+  if (typeof drawGrid === 'undefined') miss.push('app.js');
+  if (miss.length) {
+    document.getElementById('connTxt').textContent = 'לא נטען: ' + miss.join(', ');
+    document.getElementById('dot').style.background = '#e74c3c';
+  }
+});
+</script>
 </body></html>
